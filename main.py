@@ -13,8 +13,8 @@ def home():
 
 
 class LoginForm(FlaskForm):
-    email = StringField(label='email', validators=[DataRequired])
-    password = PasswordField(label='password', validators=[DataRequired])
+    email = StringField(label='email', validators=[DataRequired()])
+    password = PasswordField(label='password', validators=[DataRequired()])
     submit = SubmitField(label='Log In')
 
 
